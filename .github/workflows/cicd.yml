@@ -57,7 +57,7 @@ jobs:
         docker build -t ${{ secrets.DOCKER_USERNAME }}/devops:${{ github.sha }} .
         docker push ${{ secrets.DOCKER_USERNAME }}/devops:${{ github.sha }}
 
-    - name: Deploy to Azure Web App
+    - name: epitasocial
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'dv-cute-perch'
